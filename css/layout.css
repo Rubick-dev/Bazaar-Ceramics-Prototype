@@ -1,0 +1,53 @@
+/* ### CSS Grid ### */
+.grid {
+  height: 100%;
+  display: grid;
+  grid-gap: 1px;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 1fr, 1fr, 1fr, 1fr;
+  justify-items: center;
+  align-items: center;
+  grid-template-areas:
+    "a a a a a a b b b c c c"
+    "a a a a a a d d d e e e"
+    "f f f f f f g g g g g g"
+    "f f f f f f . h h h i i";
+}
+
+.mainPicture {
+  grid-area: a;
+}
+
+.topPicText {
+  grid-area: b;
+}
+
+.topPic {
+  grid-area: c;
+}
+
+.bottomPicText {
+  grid-area: d;
+}
+
+.bottomPic {
+  grid-area: e;
+}
+
+.contentBottomText {
+  grid-area: f;
+}
+
+.contentBottomEmailInstruct {
+  grid-area: g;
+}
+
+.inputBox {
+  grid-area: h;
+}
+
+.buttonDiv {
+  grid-area: i;
+}
+
+/* @media(view:) */

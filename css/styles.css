@@ -1,0 +1,196 @@
+body{
+  margin: 0;
+  background: #222;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: 13px;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+
+/* ### Navigation Menu Styling ### */
+#navbar, #navbar ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#navbar {
+  width: auto;
+  background-color: Blue;
+  margin: 10px auto;
+  border-radius: 5px;
+}
+
+#navbar:before,
+#navbar:after {
+  content: '';
+  display: table;
+}
+
+#navbar:after {
+  clear: both;
+}
+
+#logo {
+  float: left;
+  padding: 5px 0;
+  margin-right: 40px;
+  margin-left: 10px;
+}
+
+#navbar li {
+  float: left;
+  position: relative;
+}
+
+#navbar a {
+  float: left;
+  padding: 12px 25px;
+  margin-top: 23px;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+  color: rgb(187, 181, 181);
+}
+
+#navbar li:hover > a {
+  color: #fff;
+  background: #262626;
+}
+
+#navbar ul {
+  margin: 20px;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 63px;
+  left: 0;
+  z-index: 1;
+  background: #262626;
+  transition: all .3s ease-in-out;
+}
+
+#navbar li:hover > ul {
+  opacity: 1;
+  visibility: visible;
+  margin: 0;
+}
+
+#navbar ul a {
+  padding: 10px;
+  width: 130px;
+  display: block;
+  white-space: wrap;
+  float: none;
+  margin-top: 10px;
+}
+
+#navbar ul a:hover {
+  background-color: blue;
+}
+
+.current {
+  border: 3px solid white;
+}
+
+
+/* ### Content Styling ### */
+.picture {
+  width: 100%;
+  height: auto;
+}
+
+.grid {
+  font-family: 'Rubik', sans-serif;
+  font-size: .8em;
+  color: rgb(187, 181, 181);
+}
+
+.topPicText,
+.bottomPicText {
+  padding: 20px;
+  align-content: center;
+  text-align: center;
+}
+
+.mainPicDescription,
+.contentBottomEmailInstruct {
+  padding: 5%;
+  align-content: center;
+  text-align: center;
+}
+
+.input-group,
+.inputBox,
+.form-control {
+
+  justify-self: right;
+}
+
+.footerDiv {
+  height: 60px;
+  background: blue;
+  position: relative;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: .7em;
+  border-radius: 6px;
+
+}
+
+/* Footer Styling */
+.footerDiv P {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  right: 45%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+}
+
+/* Button Styling */
+.buttonDiv{
+  text-align: center;
+}
+
+.btnPrimary {
+  border: 1px solid #3498db;
+  background: none;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif; 
+  cursor: pointer;
+  margin: 10px;
+  transition: 0.8s;
+  position: relative;
+  overflow: hidden;
+}
+
+.btnPrimary:hover {
+  color: #fff;
+}
+
+.btnPrimary::before {
+  content:'';
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: 3498db;
+  z-index: -1;
+  transition: 0.8s;
+}
+
+.btnPrimary::before {
+  top: 0;
+  border-radius: 0 0 50% 50%;
+}
+
+.btnPrimar:hover::before {
+  height: 180%;
+}
